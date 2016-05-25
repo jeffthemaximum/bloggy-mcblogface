@@ -11,15 +11,6 @@
         <td>DESTROY</td>
     </tr>
 
-
-<% @articles.each do |article| %>
-    <tr>
-        <td><b>Title: </b><%= article.title %></td>
-        <td><b>Text: </b><%= article.text %></td>
-        <td><%= link_to "Show article", article_path(article) %></td>
-        <td><%= link_to "Edit article", edit_article_path(article) %></td>
-        <td><%= link_to "DESTROY article", article_path(article), method: :delete, data: { confirm: 'Are you sure u wanna delete that sweet, sweet article?' }%></td>
-    </tr>
-<% end %>
+    <%= render @articles %>
 
 </table>

@@ -1,0 +1,12 @@
+<h4>
+    Comment <%= comment_counter %>
+</h4>
+<p>
+    <b>commentor:</b> <%= comment.commentor %>
+</p>
+<p>
+    <b>Commentor:</b> <%= comment.text %>
+</p>
+<p>
+    <%= link_to "Delete this spammy comment", [comment.article, comment], method: :delete %>
+</p>
